@@ -1,3 +1,9 @@
+<?php
+/* https://www.php.net/manual/fr/reserved.variables.server.php */
+  $host = "http://$_SERVER[HTTP_HOST]/wall_from_scratch/";
+  $url = $host . '?page=';
+?>
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -13,4 +19,5 @@
     <input type="password" name="password" placeholder="Password">
     <button type="submit">Signin</button>
   </form>
+  <a href="<?php echo $url . 'login'?>" alt="signin">Already have an account?</a>
 </body>

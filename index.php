@@ -1,7 +1,7 @@
 <?php
+session_start();
 
 // Routing
-
 $page = $_GET['page'];
 
 if (empty($_GET))
@@ -14,18 +14,9 @@ if ($page == 'signin')
   include 'controllers/signinController.php';
 }
 
-
-
-
-
-
 if ($page == 'login')
 {
-  include 'views/login.php';
-  if(!empty($_POST))
-  {
-    header('Location: http://localhost:8888/wall_from_scratch/?page=wall'); // redirection
-  }
+  include 'controllers/loginController.php';
 }
 
 if ($page == 'wall')
