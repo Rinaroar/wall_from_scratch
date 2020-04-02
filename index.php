@@ -2,7 +2,11 @@
 session_start();
 
 // Routing
-$page = $_GET['page'];
+$page = '';
+if (!empty($_GET['page']))
+{
+  $page = $_GET['page'];
+}
 
 if (empty($_GET))
 {
@@ -21,5 +25,5 @@ if ($page == 'login')
 
 if ($page == 'wall')
 {
-  include 'views/wall.php';
+  include 'controllers/wallController.php';
 }

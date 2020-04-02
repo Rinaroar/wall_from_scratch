@@ -1,5 +1,5 @@
 <?php
-/* Lien avec la bose de donnée */
+/* Lien avec la base de donnée */
 require 'connexion.php';
 
 function getUserData () {

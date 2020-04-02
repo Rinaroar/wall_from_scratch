@@ -6,6 +6,7 @@ require 'models/loginModel.php';
 
 if (!empty($_POST['email']))
 {
+  $user = getUserData ();
 
   if (!empty($user))
   {
