@@ -1,5 +1,15 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Wall from scratch</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
 <?php
 session_start();
+
 
 // Routing
 $page = '';
@@ -27,3 +37,7 @@ if ($page == 'wall')
 {
   include 'controllers/wallController.php';
 }
+
+?>
+
+</body>

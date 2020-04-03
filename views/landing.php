@@ -4,14 +4,5 @@
   $url = $host . '?page=';
 ?>
 
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Wall from scratch</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <h1>Hello</h1>
-  <a href="<?php echo $url . 'signin'?>" alt="signin">Sign here</a>
-</body>
+<h1>Hello</h1>
+<a href="<?php echo $url . 'signin'?>" alt="signin">Sign here</a>
