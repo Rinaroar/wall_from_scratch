@@ -3,13 +3,13 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
+
 -- Généré le :  ven. 03 avr. 2020 à 13:35
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.3.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
-
 
 --
 -- Base de données :  `wall`
@@ -71,12 +71,12 @@ ALTER TABLE `contents`
   ADD PRIMARY KEY (`id`);
 
 --
+
 -- Index pour la table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
---
 -- AUTO_INCREMENT pour les tables déchargées
 --
 
