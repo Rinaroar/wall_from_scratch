@@ -1,11 +1,11 @@
 
 <h1>My Wall</h1>
   <form action="" method="post">
-    <input type="text" name="content">
+    <input type="text" name="content" class="wallInput">
     <button type="submit">Add</button>
   </form>
 
-  <div>
+  <div class="wall">
     <ul>
     <?php foreach($contents as $content){?>
         <li><?php echo $content['content']; ?></li>

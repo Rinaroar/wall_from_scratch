@@ -1,0 +1,49 @@
+body {
+  margin: 40px;
+  background-color: #eeee;
+}
+
+h1 {
+  color:indigo;
+}
+
+button {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  width: 6%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: indigo;
+  color: white;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+
+.wallInput{
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  width: 15%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.wall {
+  border: solid 2px white;
+  width: 35%;
+  margin-top: 20px;
+}
