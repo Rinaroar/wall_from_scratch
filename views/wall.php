@@ -1,5 +1,5 @@
 
-<h1>My Wall</h1>
+<h1>The Wall</h1>
   <form action="" method="post">
     <input type="text" name="content" class="wallInput">
     <button type="submit">Add</button>

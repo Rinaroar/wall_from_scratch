@@ -10,7 +10,6 @@
 <?php
 session_start();
 
-
 // Routing
 $page = '';
 if (!empty($_GET['page']))
