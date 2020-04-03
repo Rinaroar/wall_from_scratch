@@ -1,15 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
+
 body {
   margin: 40px;
   background-color: #eeee;
+  font-style: 'Raleway';
 }
 
 h1 {
   color:indigo;
+  margin-bottom: 20px;
+}
+
+.home {
+  font-size: 7rem;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+}
+
+a {
+  text-decoration: none;
+  color:  indigo;
+  font-weight: 600;
+}
+
+a:hover {
+  color: palevioletred;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  width: 15%;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 button {
   padding: 10px;
-  background-color: white;
+  background-color: indigo;
+  color: white;
   border: none;
   border-radius: 3px;
   width: 6%;
@@ -17,9 +50,8 @@ button {
 }
 
 button:hover {
-  background-color: indigo;
+  background-color: palevioletred;
   color: white;
-  cursor: pointer;
 }
 
 ul {
@@ -30,16 +62,7 @@ ul {
 li {
   margin: 10px;
   font-size: 1.2rem;
-}
-
-
-.wallInput{
-  padding: 10px;
-  border: none;
-  border-radius: 3px;
-  width: 15%;
-  margin-right: 10px;
-  cursor: pointer;
+  color: indigo;
 }
 
 .wall {

@@ -11,4 +11,4 @@
     <input type="password" name="password" placeholder="Password">
     <button type="submit">Signin</button>
   </form>
-  <a href="<?php echo $url . 'login'?>" alt="signin">Already have an account?</a>
+  <p>Already have an account?<a href="<?php echo $url . 'login'?>" alt="signin"> Let's log then.</a><p>
