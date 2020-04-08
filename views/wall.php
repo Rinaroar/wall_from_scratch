@@ -8,7 +8,7 @@
   <div class="wall">
     <ul>
     <?php foreach($contents as $content){?>
-        <li><?php echo $content['content']; ?></li>
+        <li><?php echo $content['content']; ?>, <?php echo $content['date']; ?>, <?php echo $content['user'][0]['name']; ?> </li>
     <?php }?>
     <ul>
   </div>
