@@ -5,10 +5,21 @@
     <button type="submit">Add</button>
   </form>
 
-  <div class="wall">
-    <ul>
+  <table class="wall">
+    <thead>
+      <tr>
+        <th>What?</th>
+        <th>Who?</th>
+        <th>When?</th>
+      </tr>
+    </thead>
+    <tbody>
     <?php foreach($contents as $content){?>
-        <li><?php echo $content['content']; ?>, <?php echo $content['date']; ?>, <?php echo $content['user'][0]['name']; ?> </li>
-    <?php }?>
-    <ul>
-  </div>
+      <tr>
+        <td><?php echo $content['content']; ?></td>
+        <td><?php echo $content['user'][0]['name']; ?></td>
+        <td><?php echo $content['date']; ?></td>
+        <?php }?>
+      </tr>
+    <tbody>
+  </table>

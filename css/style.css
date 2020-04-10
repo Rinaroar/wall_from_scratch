@@ -66,7 +66,25 @@ li {
 }
 
 .wall {
-  border: solid 2px white;
-  width: 35%;
-  margin-top: 20px;
+  width: 50%;
+  margin-top: 25px;
 }
+
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: indigo;
+  color: white;
+}
+
+td {
+  padding: 5px;
+}
+
+.wall tr:nth-child(even){background-color: #f2f2f2;}
+
+.wall tr:hover {background-color: rgb(255, 224, 234);}
+
