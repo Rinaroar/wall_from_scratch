@@ -40,3 +40,12 @@ function getUserByContent($user_id) {
 
   return $query->fetchAll(PDO::FETCH_ASSOC);
 }
+
+function deleteWord () {
+  $bdd = connectToBdd();
+
+  $query = $bdd->prepare("DELETE FROM `contents` WHERE `contents`.`id` = ?");
+  $query->execute([$user_id]);
+
+  return $query->fetchAll(PDO::FETCH_ASSOC);
+}
