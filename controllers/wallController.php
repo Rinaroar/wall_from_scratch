@@ -13,6 +13,10 @@ if ($_SESSION['user_id'])
     unset($_POST['content']);
     header('Location: http://localhost:8888/wall_from_scratch/?page=wall');
   }
+  if (array_key_exists('delete_word', $_POST)) {
+    deleteWord($_POST['delete_word']);
+    header('Location: http://localhost:8888/wall_from_scratch/?page=wall');
+  }
   $contents = getContent();
   require 'views/wall.php';
 }

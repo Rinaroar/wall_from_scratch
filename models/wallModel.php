@@ -41,11 +41,11 @@ function getUserByContent($user_id) {
   return $query->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function deleteWord () {
-  $bdd = connectToBdd();
+function deleteWord ($id) {
+  if (! is_null($id)) {
+    $bdd = connectToBdd();
 
-  $query = $bdd->prepare("DELETE FROM `contents` WHERE `contents`.`id` = ?");
-  $query->execute([$user_id]);
-
-  return $query->fetchAll(PDO::FETCH_ASSOC);
+    $query = $bdd->prepare("DELETE FROM `contents` WHERE `contents`.`id` = ?");
+    $query->execute([$id]);
+  }
 }
